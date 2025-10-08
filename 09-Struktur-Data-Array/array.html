@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Contoh Array di JavaScript</title>
+</head>
+<body>
+  <h2>Contoh Struktur Data Array di JavaScript</h2>
+  <div id="output"></div>
+
+  <script>
+    // Membuat array berisi nama buah
+    var buah = ["Apel", "Jeruk", "Mangga", "Pisang", "Anggur"];
+
+    // Menampilkan isi array
+    document.getElementById("output").innerHTML += "<b>Daftar Buah:</b><br>";
+    for (var i = 0; i < buah.length; i++) {
+      document.getElementById("output").innerHTML += (i+1) + ". " + buah[i] + "<br>";
+    }
+
+    // Menambahkan buah baru ke array
+    buah.push("Semangka");
+
+    // Menampilkan setelah ditambahkan
+    document.getElementById("output").innerHTML += "<br><b>Setelah ditambahkan:</b><br>";
+    for (var i = 0; i < buah.length; i++) {
+      document.getElementById("output").innerHTML += (i+1) + ". " + buah[i] + "<br>";
+    }
+  </script>
+</body>
+</html>
