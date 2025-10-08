@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contoh Event Klik</title>
+</head>
+<body>
+  <button id="btn-double">Klik 2x</button>
+
+  <script>
+    const btnLogin = document.getElementById("btn-double");
+    btnLogin.addEventListener("dblclick", function(){
+      alert("Terima kasih, kamu sudah klik 2x");
+    });
+  </script>
+</body>
+</html>
