@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contoh Event Key</title>
+</head>
+<body>
+  <h1 id="keydown"></h1>
+  <h1 id="pressed"></h1>
+  <h1 id="keyup"></h1>
+
+  <script>
+    const keydown = document.getElementById("keydown");
+    const pressed = document.getElementById("pressed");
+    const keyup = document.getElementById("keyup");
+
+    document.addEventListener("keydown", function (event) {
+      keydown.innerText = `menekan: ${event.key}`;
+    });
+    
+    document.addEventListener("keypress", function (event) {
+      pressed.innerText = `menahan: ${event.key}`;
+    });
+
+    document.addEventListener("keyup", function (event) {
+      keyup.innerText = `melepas: ${event.key}`;
+    });
+  </script>
+</body>
+</html>
