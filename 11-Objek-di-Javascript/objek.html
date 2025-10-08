@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contoh Objek, Properti, dan Method di JavaScript</title>
+  </head>
+  <body>
+
+    <script>
+      // Membuat objek bernama "mobil"
+      var mobil = {
+        // Properti (ciri-ciri dari objek)
+        merk: "Toyota",
+        warna: "Hitam",
+        tahun: 2022,
+
+        // Method (fungsi di dalam objek)
+        nyalakan: function () {
+          return "Mobil " + this.merk + " dinyalakan";
+        },
+
+        info: function () {
+          return (
+            "Merk: " +
+            this.merk +
+            "<br>Warna: " +
+            this.warna +
+            "<br>Tahun: " +
+            this.tahun
+          );
+        },
+      };
+
+      // Menampilkan data di halaman
+      document.write("<b>Informasi Mobil:</b><br>" + mobil.info() + "<br><br>");
+      document.write("<b>Aksi:</b><br>" + mobil.nyalakan());
+    </script>
+  </body>
+</html>
