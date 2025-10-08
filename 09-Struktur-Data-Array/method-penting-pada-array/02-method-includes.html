@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Method includes</title>
+</head>
+<body>
+   <script>
+      var tanaman = ["Padi", "Kacang", "Jagung", "Kedelai"];
+
+// apakah kacang sudah ada di dalam array tanaman?
+var adaKacang = tanaman.includes("Kacang");
+
+console.log(adaKacang); // -> true
+
+var adaPadi = tanaman.includes("Padi");
+
+console.log(adaPadi); // -> true
+
+// apakah bayam ada?
+var adaBayam = tanaman.includes("Bayam");
+
+console.log(adaBayam); // -> false
+   </script>
+</body>
+</html>
