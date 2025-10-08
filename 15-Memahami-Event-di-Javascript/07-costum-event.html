@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan Custom Event</title>
+</head>
+<body>
+  <div id="message" style="display: none; background: lightgreen;">
+    Pendaftaran berhasil
+  </div>
+  <button id="btn-submit">Daftar Sekarang</button>
+  <script>
+    // membuat object custom event
+    const eventRegisterComplete = new Event('register-complete');
+
+    // membuat object element dom
+    const messageElement = document.getElementById('message');
+    const btnSubmit = document.getElementById('btn-submit');
+
+    // handle untuk custom event  
+    document.addEventListener('register-complete', function (e) {
+      messageElement.style.display = "flex";
+    });
+
+    // handle untuk event klik pada button
+    btnSubmit.addEventListener('click', function (e) {
+      // trigger custom event register-complete
+      document.dispatchEvent(eventRegisterComplete);
+    });
+  </script>
+</body>
+</html>
