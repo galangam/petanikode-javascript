@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contoh Event Mouse</title>
+  </head>
+  <body>
+    <button id="btn-enter">Mouse Enter</button>
+    <button id="btn-hover">Hover</button>
+    <button id="btn-out">Mouse Out</button>
+
+    <script>
+      const btnEnter = document.getElementById("btn-enter");
+      const btnHover = document.getElementById("btn-hover");
+      const btnOut = document.getElementById("btn-out");
+
+      btnEnter.addEventListener("mouseenter", function (event) {
+        event.target.innerText = "Mouse sudah masuk";
+      });
+
+      btnOut.addEventListener("mouseout", function (event) {
+        event.target.innerText = "Mouse sudah keluar";
+      });
+
+      btnHover.addEventListener("mouseover", function (event) {
+        event.target.innerText = "Mouse sudah di atas elemen";
+      });
+    </script>
+  </body>
+</html>
