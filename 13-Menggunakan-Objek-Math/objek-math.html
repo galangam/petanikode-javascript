@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Contoh Objek Math</title>
+</head>
+<body>
+  <h2>Contoh Objek Math untuk Perhitungan Matematika</h2>
+  <div id="output"></div>
+
+  <script>
+    // Membuat beberapa contoh angka
+    var a = 25;
+    var b = 4;
+
+    // Menggunakan berbagai properti dan method dari objek Math
+    var akar = Math.sqrt(a);         // Akar kuadrat
+    var pangkat = Math.pow(b, 3);    // b pangkat 3
+    var pembulatan = Math.round(4.6); // Pembulatan ke terdekat
+    var acak = Math.random();        // Angka acak antara 0 dan 1
+    var maksimum = Math.max(a, b, 100, 2); // Nilai tertinggi
+    var minimum = Math.min(a, b, 100, 2);  // Nilai terendah
+
+    // Menampilkan hasil di halaman
+    var out = document.getElementById("output");
+    out.innerHTML = `
+      Nilai a = ${a}<br>
+      Nilai b = ${b}<br><br>
+
+      Akar kuadrat dari ${a} = ${akar}<br>
+      ${b} pangkat 3 = ${pangkat}<br>
+      Pembulatan dari 4.6 = ${pembulatan}<br>
+      Nilai acak (0–1) = ${acak}<br>
+      Nilai maksimum = ${maksimum}<br>
+      Nilai minimum = ${minimum}<br>
+    `;
+  </script>
+</body>
+</html>
+
